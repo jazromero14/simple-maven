@@ -7,5 +7,17 @@ pipeline {
       }
     }
 
+    stage('Test') {
+      steps {
+        sh 'mvn test'
+      }
+    }
+
+    stage('Delivered') {
+      steps {
+        sh './jenkins/scripts/deliver.sh'
+      }
+    }
+
   }
 }
