@@ -25,5 +25,11 @@ pipeline {
       }
     }
 
+    stage('Test3') {
+      steps {
+        sh 'echo \'Hello world 2.1\''
+      }
+    }
+
   }
 }
