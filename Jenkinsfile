@@ -15,7 +15,7 @@ pipeline {
 
     stage('Delivered') {
       steps {
-        sh 'echo \'Success\''
+        sh './jenkins/scripts/deliver.sh'
       }
     }
 
